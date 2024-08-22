@@ -1,0 +1,67 @@
+body {
+    background-image: url(Background.png);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+
+.plataforma__assinatura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    align-items: center;
+    gap: 15px;
+    margin: 5% 0 10% 2%;
+}
+.plataforma__assinatura > h1 {
+    font-size: 40px;
+    color: white;
+    font-family: var(); 
+    text-align: center;
+}
+.plataforma__assinatura > img {
+    width: 80%;
+    height: 90%;
+}
+.preco {
+    background-color: #167BF7;
+    color: white;
+    font-family: var() ;
+    font-size: 16px;
+    font-weight: 400px;
+    border-radius: 8px;
+    width: 512px;
+    height: 56px;
+    padding: 16px;
+    text-align: center;
+     /* preciso criar uma animação ao interajir com a escrita */
+}
+.assinatura__alura {
+    color: white;
+    font-family: var() ;
+    font-size: 16px;
+    font-weight: 400px;
+    border-radius: 8px;
+    border: 1px solid white;
+    width: 512px;
+    height:56px;
+    padding: 16px;
+    text-align: center;
+    background-color:transparent;
+     /* preciso criar uma animação ao interajir com a escrita */
+}
+.plataforma__assinatura > span {
+    font-family: var();
+    color: white;
+    font-size: 12px;
+    font-weight: 400px;
+    text-align: center;
+    width: 380px;
+    height: 15px;
+    /* preciso criar uma animação ao interajir com a escrita */
+
+}
