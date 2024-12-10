@@ -1,26 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
     background-image: url(Background.png);
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
+    background-color: #00040D;
 }
-
-
 .plataforma__assinatura {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 45%;
-    align-items: center;
     gap: 15px;
-    margin: 5% 0 10% 2%;
+    margin: 1.5% 0 10% 2%;
 }
 .plataforma__assinatura > h1 {
     font-size: 40px;
     color: white;
-    font-family: var(); 
+    font-family: var("Inter", sans-serif); 
     text-align: center;
 }
 .plataforma__assinatura > img {
@@ -30,38 +31,157 @@ body {
 .preco {
     background-color: #167BF7;
     color: white;
-    font-family: var() ;
+    font-family: var("Inter", sans-serif);
     font-size: 16px;
     font-weight: 400px;
     border-radius: 8px;
     width: 512px;
     height: 56px;
-    padding: 16px;
-    text-align: center;
-     /* preciso criar uma animação ao interajir com a escrita */
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+}
+.preco:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color:#0070f8;
 }
 .assinatura__alura {
     color: white;
-    font-family: var() ;
+    font-family: var("Inter", sans-serif) ;
     font-size: 16px;
     font-weight: 400px;
     border-radius: 8px;
     border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 512px;
     height:56px;
-    padding: 16px;
+    padding: 6px;
     text-align: center;
     background-color:transparent;
-     /* preciso criar uma animação ao interajir com a escrita */
+    text-decoration: none;
+}
+.assinatura__alura:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #272727;
 }
 .plataforma__assinatura > span {
-    font-family: var();
+    font-family: var("Inter", sans-serif);
     color: white;
     font-size: 12px;
     font-weight: 400px;
     text-align: center;
     width: 380px;
     height: 15px;
-    /* preciso criar uma animação ao interajir com a escrita */
+}
+
+/* parte do conteudo principal */
+.principal__conteudo {
+    display: flex;
+    justify-content: column;
+    margin: 0 10.5% 0 10.8%;
+    flex-direction: column;
+}
+.principal__conteudo__plataforma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+.principal__conteudo__plataforma__anuncio > h2 {
+    font-family: var("Inter", sans-serif);
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.principal__conteudo__plataforma__anuncio > p {
+    font-family: var("Inter", sans-serif);
+    font-size: 20px;
+    font-weight: 400;
+    color:#F9F9F9;
+    padding-right: 10%;
+}
+.principal__conteudo__plataforma__anuncio > button:hover {
+    text-decoration: underline;
+    background-color: #0071fc;
+}
+.principal__conteudo__assinatura__combo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 0 0 0 ;
 
 }
+.principal__conteudo__plataforma__anuncio > button {
+    color:#F9F9F9;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 8px;
+    background-color:#167BF7;
+}
+.principal__conteudo__marketing__cursos {
+    display: flex;
+    padding: 20% 0 0 3.5% ;
+}
+.rodape {
+    padding: 10% 0 5% 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape__dispositivos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rodape__posicionamento {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    color: white;
+    align-items: center;
+}
+.rodape__posicionamento > p {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var("Inter", sans-serif);
+}
+
+.alura__logo {
+    height: 35.28px;
+    width: 102px;
+    margin-top:60px;
+}
+
+.lista__links {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+}
+.rodape__links > a {
+    text-decoration: none;
+    color: white;
+    font-family: var("Inter", sans-serif);
+    font-size: 16px;
+    font-weight: 400;
+}
+.rodape__links > a:hover {
+    text-decoration: underline;
+    
+}
+.rodape > p {
+    text-align: center;
+    color:#C0C0C0;
+    font-family: var("Inter", sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
